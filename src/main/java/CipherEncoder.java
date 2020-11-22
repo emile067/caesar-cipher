@@ -1,6 +1,10 @@
 public class CipherEncoder {
     private String word;
     private int key;
+    public String getOutput() {
+        return output;
+    }
+    private String output="";
     public String getWord() {
         return word;
     }
@@ -17,7 +21,6 @@ public class CipherEncoder {
         this.key = key;
     }
     public String runEncoder(){
-        String output="";
         String lowerCase = "abcdefghijklmnopqrstuvwxyz";
         String upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         char[] inputs = word.toCharArray();

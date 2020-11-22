@@ -12,12 +12,12 @@ public class CipherDecoder {
     }
 
     public void setKey(int key) {
-        this.key = key;
+        this.key = -key;
     }
 
     private String word;
     private int key;
-    public String runDecoder(String word, int key){
+    public String runDecoder(){
         String output="";
         String lowerCase = "abcdefghijklmnopqrstuvwxyz";
         String upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

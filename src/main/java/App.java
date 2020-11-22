@@ -10,7 +10,9 @@ public class App {
         System.out.println("Enter the key:");
         int cipherKey = Integer.parseInt(myConsole.readLine());
         newEncoder.setKey(cipherKey);
-        String encodedString =newEncoder.runEncoder();
-        System.out.println(encodedString);
+        System.out.println("Encoded string: "+newEncoder.runEncoder());
+        newDecoder.setWord(newEncoder.getOutput());
+        newDecoder.setKey(newEncoder.getKey());
+        System.out.println("Decoded string: "+newDecoder.runDecoder());
     }
 }
