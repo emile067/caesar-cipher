@@ -23,6 +23,8 @@ public class CipherEncoder {
                     index = index + 26;
                 }
                 output += lowerCase.charAt(index);
+            }else {
+                output = output + input;
             }
         }
         return output;

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CipherEncoderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-22T09:46:54" hostname="emile-HP-ProBook-640-G1" time="0.01">
+<testsuite name="CipherEncoderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-11-22T10:03:09" hostname="emile-HP-ProBook-640-G1" time="0.004">
   <properties/>
-  <testcase name="runCipher_oneString_encodedExceedsRangeLeftShiftA_Z" classname="CipherEncoderTest" time="0.004"/>
-  <testcase name="runCipher_oneCharacter" classname="CipherEncoderTest" time="0.001"/>
+  <testcase name="runCipher_oneCharacter" classname="CipherEncoderTest" time="0.002"/>
+  <testcase name="runCipher_oneWordString" classname="CipherEncoderTest" time="0.0"/>
   <testcase name="runCipher_oneCharacter_encodedExceedsRangeRightShiftA_Z" classname="CipherEncoderTest" time="0.0"/>
   <testcase name="runCipher_oneCharacter_includeUpperCAse" classname="CipherEncoderTest" time="0.0"/>
-  <testcase name="runCipher_oneCharacter_encodedExceedsRangeLeftShiftA_Z" classname="CipherEncoderTest" time="0.002"/>
+  <testcase name="runCipher_multipleWords_withSpacing" classname="CipherEncoderTest" time="0.0"/>
+  <testcase name="runCipher_oneWordString_withUpperCase" classname="CipherEncoderTest" time="0.0"/>
+  <testcase name="runCipher_oneCharacter_encodedExceedsRangeLeftShiftA_Z" classname="CipherEncoderTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
