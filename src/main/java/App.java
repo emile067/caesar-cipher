@@ -6,11 +6,11 @@ public class App {
         CipherDecoder newDecoder = new CipherDecoder();
         System.out.println("Enter the message you wish to encode:");
         String message = myConsole.readLine();
-        System.out.println(message);
+        newEncoder.setWord(message);
         System.out.println("Enter the key:");
         int cipherKey = Integer.parseInt(myConsole.readLine());
-        System.out.println(message);
-////        String encodedString = newEncoder.runEncoder();
-//        System.out.println("Encoded String:" + encodedString);
+        newEncoder.setKey(cipherKey);
+        String encodedString =newEncoder.runEncoder();
+        System.out.println(encodedString);
     }
 }
