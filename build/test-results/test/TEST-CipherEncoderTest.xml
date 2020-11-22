@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CipherEncoderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-11-22T10:03:09" hostname="emile-HP-ProBook-640-G1" time="0.004">
+<testsuite name="CipherEncoderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-11-22T22:30:29" hostname="emile-HP-ProBook-640-G1" time="0.003">
   <properties/>
-  <testcase name="runCipher_oneCharacter" classname="CipherEncoderTest" time="0.002"/>
+  <testcase name="runCipher_oneCharacter" classname="CipherEncoderTest" time="0.001"/>
   <testcase name="runCipher_oneWordString" classname="CipherEncoderTest" time="0.0"/>
   <testcase name="runCipher_oneCharacter_encodedExceedsRangeRightShiftA_Z" classname="CipherEncoderTest" time="0.0"/>
   <testcase name="runCipher_oneCharacter_includeUpperCAse" classname="CipherEncoderTest" time="0.0"/>

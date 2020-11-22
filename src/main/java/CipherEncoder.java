@@ -1,6 +1,22 @@
 public class CipherEncoder {
+    private String word;
+    private int key;
+    public String getWord() {
+        return word;
+    }
 
-    public String runEncoder(String word, int key){
+    public void setWord(String word) {
+        this.word = word;
+    }
+
+    public int getKey() {
+        return key;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
+    }
+    public String runEncoder(){
         String output="";
         String lowerCase = "abcdefghijklmnopqrstuvwxyz";
         String upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
