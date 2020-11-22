@@ -8,11 +8,11 @@ public class CipherEncoder {
         int index;
         if (Character.isUpperCase(inputs)){
             index = upperCase.indexOf(inputs)+key;
-            if (index>25){index=index-26;}
+            if (index>25){index=index-26;}else if (index<0){index=index+26;}
             output += upperCase.charAt(index);
         }else if (Character.isLowerCase(inputs)){
             index = lowerCase.indexOf(inputs)+key;
-            if (index>25){index=index-26;}
+            if (index>25){index=index-26;}else if (index<0){index=index+26;}
             output += lowerCase.charAt(index);
         }
         return output;

@@ -17,9 +17,15 @@ public class CipherEncoderTest {
         assertEquals(expectedOutput, testCipher.runEncoder("E",1));
     }
     @Test
-    public void runCipher_oneCharacter_encodedExceedsRangeA_Z(){
+    public void runCipher_oneCharacter_encodedExceedsRangeRightShiftA_Z(){
         CipherEncoder testCipher = new CipherEncoder();
         String expectedOutput = "b";
         assertEquals(expectedOutput, testCipher.runEncoder("x",4));
+    }
+    @Test
+    public void runCipher_oneCharacter_encodedExceedsRangeLeftShiftA_Z(){
+        CipherEncoder testCipher = new CipherEncoder();
+        String expectedOutput = "x";
+        assertEquals(expectedOutput, testCipher.runEncoder("b",-4));
     }
 }
