@@ -28,4 +28,10 @@ public class CipherEncoderTest {
         String expectedOutput = "x";
         assertEquals(expectedOutput, testCipher.runEncoder("b",-4));
     }
+    @Test
+    public void runCipher_oneString_encodedExceedsRangeLeftShiftA_Z(){
+        CipherEncoder testCipher = new CipherEncoder();
+        String expectedOutput = "jgnnq";
+        assertEquals(expectedOutput, testCipher.runEncoder("hello",2));
+    }
 }
